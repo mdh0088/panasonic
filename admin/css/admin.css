@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 100;
+ src: local('Noto Sans CJK KR Thin'),
+      local('Noto Sans KR Thin'),
+	  url(/font/NotoSans-Thin.eot),
+	  url(/font/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-Thin.woff) format('woff'),
+      url(/font/NotoSans-Thin.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 200;
+ src: local('Noto Sans CJK KR Light'),
+      local('Noto Sans KR Light'),
+	  url(/font/NotoSans-Light.eot),
+	  url(/font/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-Light.woff) format('woff'),
+      url(/font/NotoSans-Light.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 300;
+ src: local('Noto Sans CJK KR DemiLight'),
+      local('Noto Sans KR DemiLight'),
+	  url(/font/NotoSans-DemiLight.eot),
+	  url(/font/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-DemiLight.woff) format('woff'),
+      url(/font/NotoSans-DemiLight.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 400;
+ src: local('Noto Sans CJK KR Regular'),
+      local('Noto Sans KR Regular'),
+	  url(/font/NotoSans-Regular.eot),
+	  url(/font/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-Regular.woff) format('woff'),
+      url(/font/NotoSans-Regular.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 500;
+ src: local('Noto Sans CJK KR Medium'),
+      local('Noto Sans KR Medium'),
+	  url(/font/NotoSans-Medium.eot),
+	  url(/font/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-Medium.woff) format('woff'),
+      url(/font/NotoSans-Medium.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 700;
+ src: local('Noto Sans CJK KR Bold'),
+      local('Noto Sans KR Bold'),
+	  url(/font/NotoSans-Bold.eot),
+	  url(/font/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-Bold.woff) format('woff'),
+      url(/font/NotoSans-Bold.ttf) format('truetype');
+}
+@font-face {
+ font-family: 'Noto Sans KR';
+ font-weight: 900;
+ src: local('Noto Sans CJK KR Black'),
+      local('Noto Sans KR Black'),
+	  url(/font/NotoSans-Black.eot),
+	  url(/font/NotoSans-Black.eot?#iefix) format('embedded-opentype'),
+      url(/font/NotoSans-Black.woff) format('woff'),
+      url(/font/NotoSans-Black.ttf) format('truetype');
+}
+
+
+/* *** 기본 설정 *** */
+*{
+	font-family:'Roboto', 'Noto Sans KR', sans-serif;
+	font-size:16px;
+	color:#666;
+	letter-spacing:-0.03em;
+	line-height:1.6;
+	box-sizing:border-box;
+}
+#header, #main{
+	min-width:1366px;
+}
+img{
+	border:0;
+	max-width:100%;
+}
+a, a:hover, a:focus{
+	text-decoration:none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+span, em, strong{
+	font-size:100%;
+	color:inherit;
+	font-style:normal;
+}
+button, button:focus{
+	outline:none;
+	cursor:pointer;
+}
+body{
+	margin:0 auto;
+}
+table{
+	width:100%;
+	border-spacing:0;
+	border-collapse:collapse;
+	border:0;
+	margin-top:15px;
+	border-top:1px solid #777;
+}
+th, td{
+	border-color:#e3e3e3;
+	padding:10px 20px;
+	color:#333;
+	font-size:15px;
+	text-align:center;
+	min-width:100px;
+}
+th{
+	background:#f8f8f8;
+	padding:14px 20px;
+	font-size:16px;
+	font-weight:500;
+}
+tr:hover td{
+	background:#f8f8f8;
+}
+th:first-child, td:first-child{
+	border-left:0;
+	min-width:50px;
+}
+th:last-child, td:last-child{
+	border-right:0;
+}
+td a{
+	text-decoration:none;
+	color:#20358c;
+	font-weight:600;
+}
+td a.normal-link{
+	font-weight:400;
+}
+td a:hover{
+	text-decoration:underline;
+}
+td.name, td.address{
+	text-align:left;
+}
+input[type="button"]{
+	cursor:pointer;
+}
+input[type="file"]{
+	font-size:90%;
+}
+input::placeholder{
+	color:#aaa;
+}
+.clearfix:before, .clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.text-left{
+	text-align:left;
+}
+.text-right{
+	text-align:right;
+}
+input[type="text"], textarea, select{
+	border:1px solid #d7d7d7;
+}
+input[type="file"]{
+	cursor:pointer;
+}
+textarea{
+	resize:vertical;
+}
+input:focus{
+	outline:none;
+}
+/* *** //기본 설정 *** */
+
+/* *** 레이아웃 *** */
+.container{
+	padding:0 50px;
+}
+.logo img{
+	width:188px;
+}
+#header .container{
+	display:table;
+	width:100%;
+}
+#header .logo, #gnb{
+	display:table-cell;
+	vertical-align:middle;
+}
+#header .logo{
+	width:200px;
+}
+#gnb{
+	text-align:right;
+}
+#gnb li{
+	display:inline-block;
+	margin-left:55px;
+}
+#gnb a{
+	display:block;
+	height:80px;
+	line-height:80px;
+	position:relative;
+}
+#gnb a:hover{
+	color:#0041c0;
+}
+#gnb .on a{
+	color:#0041c0;
+	font-weight:500;
+}
+#gnb .on a:after{
+	content:'';
+	width:100%; height:2px;
+	background:#0041c0;
+	position:absolute;
+	bottom:24px; left:0;
+}
+h1{
+	font-size:36px;
+	color:#222;
+}
+#main{
+	padding-bottom:80px;
+}
+/* *** //레이아웃 *** */
+
+
+/* 리스트 */
+div.search{
+    padding: 80px;
+    text-align: center;
+}
+div.search form{
+	font-size:0;
+}
+div.search input[type="text"]{
+    border: 0;
+    border-bottom:1px solid #333;
+    font-size: 18px;
+    width: 600px;
+    height: 50px;
+    line-height:50px;
+    vertical-align:top;
+}
+div.search input[type="button"]{
+    background: url(/img/icon_search.png) center center no-repeat;
+    background-size: 25px;
+    border: 0;
+    border-bottom:1px solid #333;
+    vertical-align:top;
+    width: 50px;
+    height: 50px;
+    text-indent: -99px;
+    overflow: hidden;
+}
+.search select{
+    border: 0;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: top;
+    margin-right:15px;
+    cursor:pointer;
+}
+.btn-wrap{
+	float:right;
+	margin-bottom:20px;
+}
+.btn-wrap > form{
+	display:inline-block;
+	vertical-align:top;
+}
+.btn-wrap input[type="button"], .btn-wrap select{
+	border:1px solid #001334;
+	background:#fff;
+	padding:0 30px;
+	border-radius:100px;
+	margin-left:10px;
+	color:#001334;
+	font-size:16px;
+	min-width:120px;
+	height:47px;
+	line-height:47px;
+	-webkit-transition:0.4s;
+	transition:0.4s;
+}
+.btn-wrap input[type="button"]:hover,
+.btn-wrap input[type="button"].blue{
+	color:#fff;
+	background:#0041c0;
+	border-color:#0041c0;
+}
+.list-num{
+	margin:0;
+    float: left;
+    padding-top: 20px;
+}
+.excel-upload{
+	float:left;
+	position:relative;
+}
+.excel-upload input[type="file"]{
+	font-size:15px;
+}
+#exceldownForm, .search + table{
+	clear:both;
+}
+th span{
+	display:inline-block;
+	vertical-align:2px;
+	margin-left:8px;
+	cursor:pointer;
+}
+.sort-result{
+	font-size:18px;
+	float:left;
+}
+.sort-result strong{
+	color:#000;
+}
+.product-list .name{
+	padding-left:35px;
+	word-break:keep-all;
+}
+.category-btn .btn-wrap:not(.excel){
+	float:left;
+    margin-left: -10px;
+}
+.excel form{
+	display:inline-block;
+	vertical-align:top;
+	margin-left:10px;
+	font-size:0;
+}
+.upload-label{
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #001334;
+    background: #fff;
+    height:47px;
+    line-height:47px;
+    color: #001334;
+    font-size: 16px;
+    min-width: 120px;
+    border-radius: 100px 0 0 100px;
+    border-right: 0;
+    padding:0 30px;
+    display:inline-block;
+    vertical-align: top;
+    margin-right:-1px;
+}
+.upload-label:after{
+	content:'';
+	width:1px; height:11px;
+	background:#d7d7d7;
+	position:absolute;
+	top:50%; right:15px;
+	margin-top:-6px;
+}
+.upload-label input[type="file"]{
+    width: 375px;
+    height: 100%;
+    border: 0;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0001;
+    z-index: 10;
+    border-radius: 100px 0 0 100px;
+    cursor: pointer;
+}
+.btn-wrap input[type="text"]{
+    height: 47px;
+    line-height: 47px;
+    border: 1px solid #001334;
+    border-left: 0;
+    width: 245px;
+    vertical-align: top;
+}
+.btn-wrap input.upload-save{
+    margin: 0;
+    border-radius: 0 100px 100px 0;
+    background: #001334;
+    color: #fff;
+    min-width: auto;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.new-btn{
+	position:relative;
+}
+.new-btn:before, .new-btn:after{
+	content:'';
+	background:#fff;
+	position:absolute;
+	top:50%;
+}
+.new-btn:before{
+	width:2px; height:12px;
+	margin-top:-7px;
+	right:33px;
+}
+.new-btn:after{
+	width:12px; height:2px;
+	margin-top:-2px;
+	right:28px;
+}
+.btn-wrap .new-btn input[type="button"]{
+	padding-right:50px;
+}
+.bd-top{
+	border-top:1px solid #888;
+}
+
+/* 등록 및 수정 */
+ul.category{
+	margin:0;
+	padding:0;
+	font-size:0;
+}
+ul.category li, .category-tab-wrap .cate_tab{
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	width:22%
+}
+ul.category li{
+	text-overflow:ellipsis;
+}
+ul.category li + li, .category-tab-wrap .cate_tab + .cate_tab{
+	margin-left:4%;
+}
+ul.category li + li:before{
+	content:'';
+    width: 12px;
+    height: 8px;
+    box-sizing: border-box;
+    border-width: 4px 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #888;
+    position: absolute;
+    top: 50%;
+    left: -11%;
+    margin-top: -4px;
+}
+ul.category li input[readonly]{
+	border:0;	
+    background: none;
+    cursor: default;
+    width:100%;
+    font-weight: 500;
+    color: #333;
+}
+.category-tab-wrap{
+	padding:10px 0;
+	font-size:0;
+}
+.cate_tab ul{
+	margin:0;
+	padding:8px 0;
+	background:#fff;
+	list-style:none;
+    height: 140px;
+    overflow-y: auto;
+}
+.cate_tab ul li{
+	font-size:15px;
+	padding:2px 12px;
+	cursor:pointer;
+}
+.cate_tab ul li:hover{
+	color:#0041c0;
+}
+.cate_tab ul li.on{
+	background:#0041c0;
+	color:#fff;
+}
+.category-wrapper{
+	font-size:0;
+    margin-right: -1%;
+}
+.category-wrapper select{
+	width:19%;
+	margin-right:1%;
+	vertical-align:top;
+	height:35px;
+	line-height:35px;
+	font-size:15px;
+}
+.store-upload h1{
+	font-size:24px;
+	text-align:center;
+	margin:1em 0;
+}
+.store-upload ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-top:1px solid #777;
+}
+.store-upload ul li{
+	border-bottom:1px solid #e3e3e3;
+	padding:10px 0;
+}
+.store-upload li strong{
+	font-size:15px;
+	display:inline-block;
+	width:100px;
+	vertical-align:middle;
+}
+.store-upload li input{
+	min-width:400px;
+	vertical-align:middle;
+}
+.store-upload li input[type="file"]{
+	margin:6px 0;
+}
+.store-upload li input[type="text"]{
+	padding: 5px 15px;
+	border:1px solid #d7d7d7;
+	height:36px;
+}
+.store-upload li textarea{
+	vertical-align:middle;
+	border:1px solid #d7d7d7;
+    min-width: 400px;
+    height: 150px;
+}
+.store-upload li small{
+    color: #888;
+    margin-left: 10px;
+}
+.store-upload .btn-wrap{
+	float:none;
+	text-align:center;
+	margin-top:50px;
+}
+
+/* 팝업 */
+.popup-wrap{
+	padding:50px;
+}
+.popup-wrap h1{
+	text-align:center;
+	font-size:28px;
+	padding-bottom:10px;
+}
+.popup-wrap .section{
+	padding:20px 0;
+}
+.popup-wrap h2{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #888;
+    line-height: 2;
+    color: #333;
+    margin:0;
+}
+.basic-info{
+	background:#f8f8f8;
+	padding:10px 18px;
+}
+.basic-info dl{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding:7px 0;
+    margin:0;
+}
+.basic-info dt{
+    display: table-cell;
+    vertical-align: top;
+    width: 22%;
+    padding-top: 5px;
+    color: #333;
+}
+.basic-info dd{
+    display: table-cell;
+    vertical-align: top;
+}
+.basic-info dd input, .basic-info dd textarea{
+    padding: 4px 10px;
+    width: 100%;
+}
+.basic-info dd select{
+	height:35px;
+	line-height:35px;
+	padding:0 5px;
+	min-width:120px;
+}
+.basic-info dd input[type="file"]{
+	padding-left:0;
+}
+.basic-info dd textarea{
+	min-height:100px;
+}
+.popup-wrap .btn-wrap{
+	float:none;
+	text-align:center;
+}
+#layer_div{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+#layer_div li{
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	border-bottom:1px solid #d7d7d7;
+	position:relative;
+	padding-right:45px;
+}
+#layer_div li h3, #layer_div .detail-info{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 7px 15px;
+}
+#layer_div li h3{
+    font-weight: 500;
+    background: #f8f8f8;
+    width: 25%;
+}
+#layer_div .detail-info dl{
+    display: table;
+    width: 100%;
+    margin:0;
+    padding:3px 0;
+}
+#layer_div .detail-info dt, #layer_div .detail-info dd{
+    display: table-cell;
+    vertical-align: top;
+}
+#layer_div .detail-info dt{
+    padding-top: 6px;
+    font-size: 15px;
+    width: 100px;
+}
+#layer_div .detail-info dd input, #layer_div .detail-info dd textarea{
+	font-size:15px;
+}
+#layer_div li dd select{
+	height:34px;
+	line-height:34px;
+	font-size:15px;
+}
+#layer_div li .btn{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0;
+    text-indent: -99px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+#layer_div li .btn:after{
+	content:'';
+	width:14px; height:2px;
+	background:#fff;
+	position:absolute;
+	left:13px; top:50%;
+	margin-top:-1px;
+}
+.add-btn{
+	background:#001334;
+}
+.add-btn:before{
+	content:'';
+	width:2px; height:14px;
+	background:#fff;
+	position:absolute;
+	top:50%; left:50%;
+	margin:-7px 0 0 -1px;
+}
+.remove-btn{
+	background:#555;
+}
+#layer_div li input, #layer_div li textarea{
+	width:100%;
+	padding:4px 10px;
+}
+#layer_div li select{
+	padding:0 5px;
+	border:1px solid #d7d7d7;
+	min-width:170px;
+    height: 36px;
+    line-height: 36px;
+}
+#layer_div li input[type="file"]{
+	padding-left:0;
+}
+
+/* 카테고리 관리 */
+#category-edit .basic-info{
+	padding:25px 25px 0;
+}
+.category-list{
+	margin:0;
+	padding:0;
+	font-size:0;
+}
+.category-list li{
+	display:inline-block;
+	vertical-align:top;
+	background:#fff;
+	padding:15px 20px;
+	border-radius:8px;
+	width:48%;
+	margin:0 0 4% 4%;
+}
+.category-list li:nth-child(odd){
+	margin-left:0;
+}
+.basic-info .category-list dt{
+	padding-top:0;
+	width:125px;
+}
+.basic-info .category-list dd{
+	word-break:break-all;
+}
+.basic-info .category-list dl{
+	padding:2px 0;
+}
+.popup-wrap .category-btn{
+	font-size:0;
+	padding:8px 0 4px;
+}
+.popup-wrap .category-btn input[type="button"]{
+	background:#fff;
+	border:1px solid #d7d7d7;
+	font-size:14px;
+	width:50%;
+    margin: 0 -0.5px;
+    height:32px;
+    line-height:32px;
+    -webkit-transition:0.4s;
+    transition:0.4s;
+}
+.popup-wrap .category-btn input[type="button"]:hover{
+	background:#888;
+	border-color:#888;
+	color:#fff;
+}
+
+
+/* 딤레이어 */
+.dim-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display:none;
+}
+.dim-layer{
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:600px;
+    max-height:430px;
+}
+.dim-layer.basic-info{
+}
+.dim-layer.basic-info dt{
+	width:25%;
+}
+.popup-wrap .dim-layer .btn-wrap{
+	padding:30px 0;
+}
+.dim-layer .close-btn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #333;
+    background: none;
+    overflow: hidden;
+    text-indent: -999px;
+    border-radius: 50%;
+    cursor:pointer;
+    -webkit-transition:0.3s;
+    transition:0.3s;
+    opacity:0.7;
+}
+.dim-layer .close-btn:before, .dim-layer .close-btn:after{
+	content:'';
+	width:16px; height:2px;
+	border-radius:3px;
+	background:#333;
+	position:absolute;
+	top:50%; left:50%;
+	margin:-1px 0 0 -8px;	
+}
+.dim-layer .close-btn:before{
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.dim-layer .close-btn:after{
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+.dim-layer .close-btn:hover{
+	opacity:1;
+	-o-transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	transform:rotate(90deg);
+}
+.popup-wrap .dim-layer h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border: 0;
+    padding: 15px 0 25px;
+}
+
+@media only screen and (max-width:1679px){
+}

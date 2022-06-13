@@ -1,0 +1,100 @@
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+  font-family: 'Nanum Square light';
+  font-style: normal;
+  font-weight: 100;
+  src: url(/font/NanumSquareL.eot);
+  src: local('Nanum Square Light'),
+       local('NanumSquareL'),
+       url(/font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareL.woff2) format('woff2'),
+       url(/font/NanumSquareL.woff) format('woff'),
+       url(/font/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareR.woff2) format('woff2'),
+       url(/font/NanumSquareR.woff) format('woff'),
+       url(/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Squaref bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/font/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareB.woff2) format('woff2'),
+       url(/font/NanumSquareB.woff) format('woff'),
+       url(/font/NanumSquareB.ttf) format('truetype');
+}
+
+*{
+	font-family: 'Nanum Square';
+	font-size:14px;
+	color:#aaaaaa;
+	letter-spacing:-1px;
+	line-height:1.6;
+}
+img{
+	border:0;
+}
+a, a:hover, a:focus{
+	text-decoration:none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+span, em, strong{
+	font-size:100%;
+	color:inherit;
+}
+.en-txt{
+	font-family: 'Poppins', sans-serif !important;
+	letter-spacing:0;
+}
+.en-txt02{
+	font-family: 'Roboto', sans-serif !important;
+	letter-spacing:0;
+}
+
+
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+
+}
+
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+
+}
