@@ -1,7 +1,7 @@
 <?php
 
 function sql_query($query) {
-    $link = mysqli_connect('localhost','root','casanova1!@','panasonic');
+    $link = mysqli_connect('localhost','','','');
     return mysqli_query($link, $query);
 }
 
